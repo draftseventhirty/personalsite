@@ -31,7 +31,12 @@ p {
 
 center, footer {
   color: var(--muted-teal);
+  text-align: center;
   font-family: "Roboto Mono";
+}
+
+embed {
+  align-content: center;
 }
 
 a {
