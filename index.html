@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="earth.css">
     <title>draft730</title>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        }
+</script>
 </head>
 <body>
     <div class="h-card">
@@ -19,15 +35,21 @@
     </div>    
     <p><small>she/her</small></p>
     <br>
-    <a rel="me" href="https://codeberg.org/draft730">codeberg</a><br>
-    <a rel="me" href="https://masto.nu/@draft730/">mastodon</a><br>
-    <a href="xmpp:azalea@openim.nl">xmpp</a><br>
-    <a href="https://auxidized.bandcamp.com">bandcamp</a><br>
-    <a href="https://tilde.club/~draft730">tilde.club</a><br>
-    <a href="https://rateyourmusic.com/~a573ria">rateyourmusic</a><br>
-    <a href="https://tilde.club/~draft730/blog/public/">music blog</a><br>
-    <a href="https://tilde.club/~draft730/micro/">tumblelog</a><br>
-    <a href="https://tilde.club/~draft730/dj/">dj sets</a><br>
+    <details>
+        <summary>my links</summary>
+            <div>
+                <a rel="me" href="https://codeberg.org/draft730">codeberg</a><br>
+                <a rel="me" href="https://masto.nu/@draft730/">mastodon</a><br>
+                <a href="xmpp:azalea@openim.nl">xmpp</a><br>
+                <a href="https://auxidized.bandcamp.com">bandcamp</a><br>
+                <a href="https://tilde.club/~draft730">tilde.club</a><br>
+                <a href="https://rateyourmusic.com/~a573ria">rateyourmusic</a><br>
+                <a href="https://tilde.club/~draft730/blog/public/">music blog</a><br>
+                <a href="https://tilde.club/~draft730/micro/">tumblelog</a><br>
+                <a href="https://tilde.club/~draft730/dj/">dj sets</a><br>
+            </div>
+    </details>
+
 <br>
 <footer>
     <center>
